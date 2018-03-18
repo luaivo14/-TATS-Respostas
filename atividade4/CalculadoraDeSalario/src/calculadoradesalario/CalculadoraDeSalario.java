@@ -13,6 +13,8 @@ public class CalculadoraDeSalario {
     public static String verificaCargo(Funcionario funcionario){
         if( funcionario.getCargo().equals("desenvolvedor")){
             return"desenvolvedor";
+        }else if( funcionario.getCargo().equals("DBA")){
+            return"DBA";
         }
         return "";
     }

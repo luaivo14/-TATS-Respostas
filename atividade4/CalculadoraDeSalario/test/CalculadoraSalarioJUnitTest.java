@@ -34,6 +34,13 @@ public class CalculadoraSalarioJUnitTest {
         funcionario.setCargo("DBA");
         assertEquals("DBA" ,CalculadoraDeSalario.verificaCargo(funcionario));
     }
+    @Test
+    public void testeVerificaTestador() {
+        Funcionario funcionario = new Funcionario();
+        funcionario.setCargo("testador");
+        assertEquals("testador" ,CalculadoraDeSalario.verificaCargo(funcionario));
+    }
+    
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
