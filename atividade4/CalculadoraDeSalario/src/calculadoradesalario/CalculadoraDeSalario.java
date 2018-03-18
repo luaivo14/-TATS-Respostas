@@ -15,6 +15,8 @@ public class CalculadoraDeSalario {
             return"desenvolvedor";
         }else if( funcionario.getCargo().equals("DBA")){
             return"DBA";
+        }else if( funcionario.getCargo().equals("testador")){
+            return"testador";
         }
         return "";
     }

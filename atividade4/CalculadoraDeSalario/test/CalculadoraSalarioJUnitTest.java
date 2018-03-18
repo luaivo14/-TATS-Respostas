@@ -40,6 +40,12 @@ public class CalculadoraSalarioJUnitTest {
         funcionario.setCargo("testador");
         assertEquals("testador" ,CalculadoraDeSalario.verificaCargo(funcionario));
     }
+    @Test
+    public void testeVerificaGerente() {
+        Funcionario funcionario = new Funcionario();
+        funcionario.setCargo("gerente");
+        assertEquals("gerente" ,CalculadoraDeSalario.verificaCargo(funcionario));
+    }
     
 
     // TODO add test methods here.
