@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+import calculadoradesalario.CalculadoraDeSalario;
+import calculadoradesalario.Funcionario;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -24,9 +26,13 @@ public class CalculadoraSalarioJUnitTest {
     public void testeVerificaDesenvolvedor() {
         Funcionario funcionario = new Funcionario();
         funcionario.setCargo("desenvolvedor");
-        String res = CalculadoraDeSalario.verificaCargo(funcionario);
-         assertEquals("desenvolvedor", res);
-        
+        assertEquals("desenvolvedor" ,CalculadoraDeSalario.verificaCargo(funcionario));
+    }
+    @Test
+    public void testeVerificaDBA() {
+        Funcionario funcionario = new Funcionario();
+        funcionario.setCargo("DBA");
+        assertEquals("DBA" ,CalculadoraDeSalario.verificaCargo(funcionario));
     }
 
     // TODO add test methods here.
