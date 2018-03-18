@@ -23,10 +23,12 @@ public class CalculadoraSalarioJUnitTest {
     }
     
     @Test
-    public void testeVerificaDesenvolvedor() {
+    public void testeVerificaDesenvolvedorSalarioBaseMenor3mil() {
         Funcionario funcionario = new Funcionario();
         funcionario.setCargo("desenvolvedor");
-        assertEquals("desenvolvedor" ,CalculadoraDeSalario.verificaCargo(funcionario));
+        funcionario.setSalárioBase(1000);
+        double res = CalculadoraDeSalario.verificaCargo(funcionario);
+        assertEquals(900 ,res);
     }
     @Test
     public void testeVerificaDBA() {
